@@ -3,7 +3,7 @@ const app = express();
 const house = require('./src/House/Routes/house')
 
 const port = 3000 || process.env.PORT
-app.listen(port, () =>
+app.listen(port,"0.0.0.0", () =>
     console.log(`Server listening  on port ${port}`)
 )
 app.get('/', (req, res) => {
